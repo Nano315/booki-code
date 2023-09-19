@@ -23,31 +23,43 @@
   <body>
     <div class="main-container">
       <header>
-        <div id="logo-container">
-          <img id="logo" src="./images/logo/Booki.png" alt="Logo de Booki" />
-        </div>
+        <img class="logo" src="./images/logo/Booki.png" alt="" />
         <nav>
-          <ul>
-            <li><a href="#" id="hebergements">Hébergements</a></li>
-            <li><a href="#" id="activités">Activités</a></li>
-          </ul>
+          <a class="container-nav1" href="#hebergement">
+            <div class="nav-hover nav1-hover"></div>
+            <p class="nav nav1">Hébergement</p>
+          </a>
+          <a class="container-nav2" href="#activites">
+            <div class="nav-hover nav2-hover"></div>
+            <p class="nav nav2">Activités</p>
+          </a>
         </nav>
       </header>
       <main>
-        <div class="info-group">
-          <form method="get" action="">
-            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre-ville ou en pleine nature</h2>
+        <form class="localisation margin-top">
+          <div class="i-container">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+          </div>
+          <div class="input-text">
             <input
+              name="localisation"
+              id="localisation"
               type="text"
-              name="prenom"
-              id="prenom"
-              placeholder="Marseille, France"
-              size="30"
-              maxlength="20"
+              placeholder="Votre destination"
+              value="Marseille, France"
             />
-            <button>Rechercher</button>
-          </form>
-        </div>
+          </div>
+          <input
+            class="rechercher-desktop"
+            type="submit"
+            value="Rechercher"
+            name="envoiLocalisation"
+            id="envoiLocalisationDesktop"
+            formmethod="get"
+          />
+        </form>
         <div class="hebergements-and-populaires">
           <section class="hebergements"></section>
           <section class="populaires">
