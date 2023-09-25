@@ -35,33 +35,89 @@
           </a>
         </nav>
       </header>
-      <main>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h2>En plein centre-ville ou en pleine nature</h2>
-        <form class="localisation margin-top">
-          <div class="i-container">
-            <i class="fa-solid fa-location-dot fa-lg"></i>
-          </div>
-          <div class="input-text">
-            <input
-              name="localisation"
-              id="localisation"
-              type="text"
-              placeholder="Votre destination"
-              value="Marseille, France"
-            />
-          </div>
+
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <h2>En plein centre-ville ou en pleine nature</h2>
+
+      <form class="localisation margin-top">
+        <div class="i-container">
+          <i class="fa-solid fa-location-dot fa-lg"></i>
+        </div>
+        <div class="input-text">
           <input
-            class="rechercher-desktop"
-            type="submit"
-            value="Rechercher"
-            name="envoiLocalisation"
-            id="envoiLocalisationDesktop"
-            formmethod="get"
+            name="localisation"
+            id="localisation"
+            type="text"
+            placeholder="Votre destination"
+            value="Marseille, France"
           />
-        </form>
+        </div>
+        <input
+          class="rechercher-desktop"
+          type="submit"
+          value="Rechercher"
+          name="envoiLocalisation"
+          id="envoiLocalisationDesktop"
+          formmethod="get"
+        />
+      </form>
+
+      <section class="filtres margin-top">
+        <em>Filtres</em>
+        <div class="filtres-wrapper">
+          <div class="filtres-card">
+            <i class="fa-solid fa-money-bill"></i>
+            <h3>Économique</h3>
+          </div>
+
+          <div class="filtres-card">
+            <i class="fa-solid fa-person"></i>
+            <h3>Familial</h3>
+          </div>
+
+          <div class="filtres-card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Romantique</h3>
+          </div>
+
+          <div class="filtres-card">
+            <i class="fa-solid fa-dog"></i>
+            <h3>Animaux autorisés</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="info margin-top">
+        <i class="fa-solid fa-info fa-xs"></i>
+        <h2>Plus de 500 logements sont disponibles dans cette ville</h2>
+      </section>
+
+      <main>
         <div class="hebergements-and-populaires">
-          <section class="hebergements"></section>
+          <section id="hebergements">
+            <h4>Hébergements à Marseille</h4>
+            <div class="container-main">
+              <article>
+                <a href="#hebergement" class="card-main">
+                  <img
+                    src="./images/hebergements/1_xlarge/canebiere.jpg"
+                    alt="Auberge de la canebière"
+                  />
+                  <p class="gras16px">Auberge de la canebière</p>
+                  <p class="price-hotel">Nuit à partir de 25€</p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star star-full fa-2xs"></i>
+                    <i class="fa-solid fa-star star-full fa-2xs"></i>
+                    <i class="fa-solid fa-star star-full fa-2xs"></i>
+                    <i class="fa-solid fa-star star-full fa-2xs"></i>
+                    <i class="fa-solid fa-star star-empty fa-2xs"></i>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <a href="#">Afficher plus</a>
+          </section>
+
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>

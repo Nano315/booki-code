@@ -130,6 +130,66 @@ form {
     cursor: pointer;
 }
 
+.filtres {
+    display: flex;
+    gap: 30px;
+    cursor: default;
+    align-items: center;
+}
+
+.filtres-wrapper {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+  
+.filtres-card {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 0px 15px;
+}
+  
+.filtres i {
+    color: #0065fc;
+}
+  
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+}
+  
+.filtres-card:hover {
+    background: #deebff;
+}
+
+em,
+main a,
+aside a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  gap: 10px;
+}
+
+.info i {
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  color: #0065fc;
+  padding: 12px 10px;
+}
+
 body {
     margin: 0;
     display: flex;
