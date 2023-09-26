@@ -1,169 +1,205 @@
-/****** General ***********/
+/* Réinitialisation des styles par défaut */
 * {
-    font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
 }
 
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+/* Styles généraux du corps de la page */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0px 40px;
+  padding: 0px;
+  max-width: 1400px;
 }
 
-.fa-solid {
-    color: var(--main-color);
+/* Styles spécifiques pour les écrans de grande taille */
+@media screen and (min-width: 1480px) {
+  body {
+    margin: 0px auto;
+  }
 }
 
-/* Pour le <header> */
+/* Styles pour la marge supérieure */
+.margin-top {
+  margin-top: 30px;
+}
+
+/* Styles pour l'en-tête */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin-left: 5px;
-    margin-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0px 5px;
 }
 
+/* Styles pour le logo */
 .logo {
-    height: 19px;
+  height: 19px;
 }
 
+/* Styles pour le hover sur la navigation */
 .nav-hover {
-    background: white;
-    height: 2px;
+  background: white;
+  height: 2px;
 }
 
+/* Styles pour le hover sur les conteneurs de navigation */
 .container-nav1:hover .nav1-hover,
 .container-nav2:hover .nav2-hover {
-    background: #0065fc;
+  background: #0065fc;
 }
 
+/* Styles pour le hover sur les liens de navigation */
 .container-nav1:hover .nav1,
 .container-nav2:hover .nav2 {
-    color: #0065fc;
+  color: #0065fc;
 }
 
+/* Styles pour le hover sur le lien de navigation "Hebergement" */
 .nav1-hover {
-    width: 112px;
+  width: 112px;
 }
 
+/* Styles pour le hover sur le lien de navigation "Activités" */
 .nav2-hover {
-    width: 63px;
+  width: 63px;
 }
 
+/* Styles pour la navigation */
 nav {
-    display: flex;
-    gap: 68px;
-    height: 100%;
+  display: flex;
+  gap: 68px;
+  height: 100%;
 }
 
+/* Styles pour les conteneurs de navigation */
 .container-nav1,
 .container-nav2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
 }
 
+/* Styles pour les liens de navigation */
 .nav {
-    margin-bottom: 40px;
-    color: black;
+  margin-bottom: 40px;
+  color: black;
 }
 
-/* Pour le <main> */
-.margin-top {
-    margin-top: 30px;
+/* Styles pour les titres h1 et h4 */
+h1,
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  cursor: default;
+  margin: 0px;
 }
 
-h1{
-    font-weight: 700;
-    font-size: 22px;
-    margin: 0px;
+/* Styles pour les titres h2 et les liens du pied de page */
+h2,
+footer a {
+  font-weight: 400;
+  font-size: 16px;
+  cursor: default;
 }
 
-h2 {
-    font-weight: normal;
-    font-size: medium;
-}
-
+/* Styles pour le formulaire de recherche */
 form {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    max-width: 400px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+
+  max-width: 400px;
 }
 
-.i-container {
-    height: 100%;
-    background: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 15px 0px 0px 15px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
+/* Styles pour le conteneur de l'icône de recherche */
+form .i-container {
+  height: 100%;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
 
+/* Styles pour l'icône de recherche */
 .input-text {
-    flex: 1;
-    position: relative;
-    height: 100%;
+  flex: 1;
+  position: relative;
+  height: 100%;
 }
 
+form .i-container i {
+  margin: auto;
+}
+
+/* Styles pour la barre de recherche */
 #localisation {
-    position: absolute;
-    inset: 0;
-    border: 1px solid #f2f2f2;
-    font-weight: 700;
-    font-size: 18px;
-    padding-left: 10px;
+  position: absolute;
+  inset: 0;
+  border: 1px solid #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 10px;
 }
 
-.rechercher-desktop {
-    height: 100%;
-    background: #0065fc;
-    border: 1px solid #0065fc;
-    border-radius: 0px 15px 15px 0px;
-    font-weight: 700;
-    font-size: 18px;
-    color: #ffffff;
-    padding: 15px;
-    cursor: pointer;
+/* Styles pour les boutons de recherche */
+.rechercher-desktop,
+.rechercher-mobile {
+  height: 100%;
+  background: #0065fc;
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 15px;
+  cursor: pointer;
 }
 
+.rechercher-mobile {
+  display: none;
+}
+
+/* Styles pour les filtres */
 .filtres {
-    display: flex;
-    gap: 30px;
-    cursor: default;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  cursor: default;
+  align-items: center;
 }
 
 .filtres-wrapper {
-    flex: 1;
-    display: flex;
-    gap: 10px;
+  flex: 1;
+  display: flex;
+  gap: 10px;
 }
-  
+
 .filtres-card {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    gap: 10px;
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  padding: 0px 15px;
 }
-  
+
 .filtres i {
-    color: #0065fc;
+  color: #0065fc;
 }
-  
-h3 {
-    font-weight: 700;
-    font-size: 17px;
-}
-  
+
+/* Styles pour le hover sur les filtres */
 .filtres-card:hover {
-    background: #deebff;
+  background: #deebff;
+}
+
+/* Styles pour les éléments en italique */
+em {
+  cursor: default;
 }
 
 em,
@@ -176,6 +212,7 @@ aside a {
   color: black;
 }
 
+/* Styles pour les informations */
 .info {
   display: flex;
   align-items: center;
@@ -190,156 +227,212 @@ aside a {
   padding: 12px 10px;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
+/* Styles pour le conteneur principal */
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+  gap: 30px;
+  display: flex;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+/* Styles pour le contenu principal */
+main {
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+  flex: 2;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
+/* Styles pour la barre latérale */
+aside {
+  flex: 1;
+  background: #f2f2f2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+/* Styles pour le conteneur des articles principaux */
+.container-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 30px 0px;
+  gap: 30px;
 }
 
-.card img {
-    object-fit: cover;
+/* Styles pour les articles principaux */
+article {
+  flex-basis: calc(33% - 20px);
 }
 
-.card-title {
-    font-size: 16px;
+/* Styles pour les cartes des articles principaux */
+.card-main {
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 100%;
 }
 
-.euro {
-    font-weight: 700;
+/* Styles pour les images des articles principaux */
+main img {
+  border: 5px solid #ffffff;
+  border-radius: 20px 20px 0px 0px;
+  object-position: center;
+  object-fit: cover;
+  height: 120px;
+  width: 100%;
 }
 
-.neutral-star {
-    color: var(--main-bg-color)
+/* Styles pour les étoiles pleines */
+.star-full {
+  color: #0065fc;
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+/* Styles pour les étoiles vides */
+.star-empty {
+  color: #f2f2f2;
 }
 
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+/* Styles pour le texte en gras de 16px */
+.gras16px {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 2px;
+  padding: 0px 14px;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+/* Styles pour le prix des hôtels */
+.price-hotel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 2px;
+  padding: 0px;
+  padding-left: 14px;
 }
 
-/****** Populaires ***********/
-.populaires {
-    width: 32%;
+/* Styles pour la notation des hôtels */
+.rating {
+  margin: 2px;
+  padding: 0px;
+  padding-left: 14px;
 }
 
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Styles pour la barre latérale */
+aside {
+  padding: 40px;
 }
 
-.populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+/* Styles pour la section supérieure de la barre latérale */
+.top-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+/* Styles pour les icônes de la barre latérale */
+aside i {
+  color: #0065fc;
 }
 
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+/* Styles pour les cartes de la barre latérale */
+.card-aside {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 140px;
+  width: 100%;
+  display: flex;
 }
 
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+/* Styles pour les images des cartes de la barre latérale */
+aside img {
+  border: 5px solid #ffffff;
+  border-radius: 20px 0px 0px 20px;
+  width: 50%;
+  object-position: center;
+  object-fit: cover;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
+/* Styles pour le conteneur des cartes de la barre latérale */
+.card-aside-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
+/* Styles pour les informations des cartes de la barre latérale */
+.info-card-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0px 5px 0px;
 }
 
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.title-price {
+    background-color: red;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+/* Styles pour les activités */
+.activites-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles pour les cartes d'activités */
+.activite-card {
+  width: 20%;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 430px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Styles pour les images des cartes d'activités */
+.activite-card img {
+  border-radius: 20px 20px 0px 0px;
+  object-position: center;
+  object-fit: cover;
+  height: 390px;
+}
+
+/* Styles pour la section des activités */
+.activites-section h4 {
+  margin: 60px 0px 20px 0px;
+}
+
+/* Styles pour le pied de page */
+footer {
+  background: #f2f2f2;
+  margin-top: 60px;
+  padding: 40px;
+  padding-right: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles pour les sections du pied de page */
+.a-propos,
+.nos-hebergements,
+.assistance {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Styles pour les liens du pied de page */
+footer a {
+  cursor: pointer;
 }
