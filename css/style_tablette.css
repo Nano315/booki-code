@@ -1,0 +1,61 @@
+@media screen and (max-width: 992px) {
+    body {
+      margin: 0px 70px;
+    }
+    .filtres {
+      gap: 1.4vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+    }
+    .main-container {
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card-main {
+      min-width: 20vw;
+    }
+  
+    .card-aside-container {
+      flex-direction: row;
+      gap: 2vw;
+    }
+  
+    .info-card-aside :nth-child(1) {
+      font-size: 14px;
+      padding: 0px 2px 0px 10px;
+    }
+    .info-card-aside :nth-child(2) {
+      font-size: 13px;
+      padding: 0px 2px 0px 10px;
+    }
+  
+    aside .rating {
+      display: flex;
+      padding-left: 10px;
+    }
+  
+    .rating :nth-child(-n + 5) {
+      font-size: 12px;
+      padding: 0px;
+    }
+  
+    .activite-card {
+      height: 240px;
+      width: 18vw;
+    }
+  
+    .activite-card img {
+      height: 210px;
+    }
+  
+    footer {
+      padding-right: 10vw;
+    }
+  }
+  
+  .activite-card :nth-child(2) {
+    font-size: 15px;
+  }

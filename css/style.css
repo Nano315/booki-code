@@ -1,439 +1,362 @@
-/* Réinitialisation des styles par défaut */
-* {
-  box-sizing: border-box;
-}
-
-/* Styles généraux du corps de la page */
 body {
-  font-family: "Raleway", sans-serif;
-  margin: 0px 40px;
-  padding: 0px;
-  max-width: 1400px;
-}
-
-/* Styles spécifiques pour les écrans de grande taille */
-@media screen and (min-width: 1480px) {
-  body {
-    margin: 0px auto;
+    font-family: "Raleway", sans-serif;
+    max-width: 1400px;
+    margin: 0px 40px;
   }
-}
-
-/* Styles pour la marge supérieure */
-.margin-top {
-  margin-top: 30px;
-}
-
-/* Styles pour l'en-tête */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  margin: 0px 5px;
-}
-
-/* Styles pour le logo */
-.logo {
-  height: 19px;
-}
-
-/* Styles pour le hover sur la navigation */
-.nav-hover {
-  background: white;
-  height: 2px;
-}
-
-/* Styles pour le hover sur les conteneurs de navigation */
-.container-nav1:hover .nav1-hover,
-.container-nav2:hover .nav2-hover {
-  background: #0065fc;
-}
-
-/* Styles pour le hover sur les liens de navigation */
-.container-nav1:hover .nav1,
-.container-nav2:hover .nav2 {
-  color: #0065fc;
-}
-
-/* Styles pour le hover sur le lien de navigation "Hebergement" */
-.nav1-hover {
-  width: 112px;
-}
-
-/* Styles pour le hover sur le lien de navigation "Activités" */
-.nav2-hover {
-  width: 63px;
-}
-
-/* Styles pour la navigation */
-nav {
-  display: flex;
-  gap: 68px;
-  height: 100%;
-}
-
-/* Styles pour les conteneurs de navigation */
-.container-nav1,
-.container-nav2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-}
-
-/* Styles pour les liens de navigation */
-.nav {
-  margin-bottom: 40px;
-  color: black;
-}
-
-/* Styles pour les titres h1 et h4 */
-h1,
-h4 {
-  font-weight: 700;
-  font-size: 22px;
-  cursor: default;
-  margin: 0px;
-}
-
-/* Styles pour les titres h2 et les liens du pied de page */
-h2,
-footer a {
-  font-weight: 400;
-  font-size: 16px;
-  cursor: default;
-}
-
-/* Styles pour le formulaire de recherche */
-form {
-  display: flex;
-  height: 50px;
-  align-items: center;
-
-  max-width: 400px;
-}
-
-/* Styles pour le conteneur de l'icône de recherche */
-form .i-container {
-  height: 100%;
-  background: #f2f2f2;
-  border: 1px solid #f2f2f2;
-  border-radius: 15px 0px 0px 15px;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-/* Styles pour l'icône de recherche */
-.input-text {
-  flex: 1;
-  position: relative;
-  height: 100%;
-}
-
-form .i-container i {
-  margin: auto;
-}
-
-/* Styles pour la barre de recherche */
-#localisation {
-  position: absolute;
-  inset: 0;
-  border: 1px solid #f2f2f2;
-  font-weight: 700;
-  font-size: 18px;
-  padding-left: 10px;
-}
-
-/* Styles pour les boutons de recherche */
-.rechercher-desktop,
-.rechercher-mobile {
-  height: 100%;
-  background: #0065fc;
-  border: 1px solid #0065fc;
-  border-radius: 0px 15px 15px 0px;
-  font-weight: 700;
-  font-size: 18px;
-  color: #ffffff;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.rechercher-mobile {
-  display: none;
-}
-
-/* Styles pour les filtres */
-.filtres {
-  display: flex;
-  gap: 30px;
-  cursor: default;
-  align-items: center;
-}
-
-.filtres-wrapper {
-  flex: 1;
-  display: flex;
-  gap: 10px;
-}
-
-.filtres-card {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  gap: 10px;
-  border: 2px solid #d9d9d9;
-  border-radius: 25px;
-  padding: 0px 15px;
-}
-
-.filtres i {
-  color: #0065fc;
-}
-
-/* Styles pour le hover sur les filtres */
-.filtres-card:hover {
-  background: #deebff;
-}
-
-/* Styles pour les éléments en italique */
-em {
-  cursor: default;
-}
-
-em,
-main a,
-aside a {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-}
-
-/* Styles pour les informations */
-.info {
-  display: flex;
-  align-items: center;
-  height: 24px;
-  gap: 10px;
-}
-
-.info i {
-  border: 1px solid #d9d9d9;
-  border-radius: 25px;
-  color: #0065fc;
-  padding: 12px 10px;
-}
-
-/* Styles pour le conteneur principal */
-.main-container {
-  gap: 30px;
-  display: flex;
-}
-
-/* Styles pour le contenu principal */
-main {
-  background: #f2f2f2;
-  border-radius: 20px;
-  padding: 40px;
-  flex: 2;
-}
-
-/* Styles pour la barre latérale */
-aside {
-  flex: 1;
-  background: #f2f2f2;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Styles pour le conteneur des articles principaux */
-.container-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 30px 0px;
-  gap: 30px;
-}
-
-/* Styles pour les articles principaux */
-article {
-  flex-basis: calc(33% - 20px);
-}
-
-/* Styles pour les cartes des articles principaux */
-.card-main {
-  background: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  height: 100%;
-}
-
-/* Styles pour les images des articles principaux */
-main img {
-  border: 5px solid #ffffff;
-  border-radius: 20px 20px 0px 0px;
-  object-position: center;
-  object-fit: cover;
-  height: 120px;
-  width: 100%;
-}
-
-/* Styles pour les étoiles pleines */
-.star-full {
-  color: #0065fc;
-}
-
-/* Styles pour les étoiles vides */
-.star-empty {
-  color: #f2f2f2;
-}
-
-/* Styles pour le texte en gras de 16px */
-.gras16px {
-  font-weight: 700;
-  font-size: 16px;
-  padding: 0px 14px;
-}
-
-/* Styles pour le prix des hôtels */
-.price-hotel {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  padding-left: 14px;
-}
-
-.gras16px, .price-hotel {
-    margin: 5px 0px 5px 0px;
-}
-
-/* Styles pour la notation des hôtels */
-.rating {
-  margin: 2px;
-  padding: 0px;
-  padding-left: 14px;
-}
-
-/* Styles pour la barre latérale */
-aside {
-  padding: 40px;
-}
-
-/* Styles pour la section supérieure de la barre latérale */
-.top-aside {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-/* Styles pour les icônes de la barre latérale */
-aside i {
-  color: #0065fc;
-}
-
-/* Styles pour les cartes de la barre latérale */
-.card-aside {
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  height: 140px;
-  width: 100%;
-  display: flex;
-  margin-bottom: 30px;
-}
-
-/* Styles pour les images des cartes de la barre latérale */
-aside img {
-  border: 5px solid #ffffff;
-  border-radius: 20px 0px 0px 20px;
-  width: 30%;
-  object-position: center;
-  object-fit: cover;
-}
-
-/* Styles pour le conteneur des cartes de la barre latérale */
-.card-aside-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-}
-
-/* Styles pour les informations des cartes de la barre latérale */
-.info-card-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 5px;
-}
-
-/* Styles pour les activités */
-.activites-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Styles pour les cartes d'activités */
-.activite-card {
-  width: 23%;
-  background: #ffffff;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  text-decoration: none;
-  color: black;
-}
-
-/* Styles pour les images des cartes d'activités */
-.activite-card img {
-  border-radius: 20px 20px 0px 0px;
-  object-position: center;
-  object-fit: cover;
-  height: 390px;
-}
-
-/* Styles pour la section des activités */
-.activites-section h4 {
-  margin: 60px 0px 20px 0px;
-}
-
-.act-margin {
-    margin: 20px 0px;
-}
-
-/* Styles pour le pied de page */
-footer {
-  background: #f2f2f2;
-  margin-top: 60px;
-  padding: 40px;
-  padding-right: 20vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Styles pour les sections du pied de page */
-.a-propos,
-.nos-hebergements,
-.assistance {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* Styles pour les liens du pied de page */
-footer a {
-  cursor: pointer;
-}
+  
+  @media screen and (min-width: 1480px) {
+    body {
+      margin: 0px auto;
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    margin-top: 30px;
+    height: 19px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 68px;
+  }
+  
+  .nav-hover {
+    background: white;
+    height: 2px;
+  }
+  
+  .container-nav1,
+  .container-nav2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .container-nav1:hover .nav1-hover,
+  .container-nav2:hover .nav2-hover {
+    background: #0065fc;
+  }
+  
+  .container-nav1:hover .nav1,
+  .container-nav2:hover .nav2 {
+    color: #0065fc;
+  }
+  
+  .nav1-hover {
+    width: 112px;
+  }
+  
+  .nav2-hover {
+    width: 63px;
+  }
+  
+  .nav {
+    color: black;
+  }
+  
+  a,
+  h2,
+  footer a {
+    font-weight: 400;
+    font-size: 16px;
+    cursor: default;
+  }
+  
+  h1,
+  h4 {
+    font-weight: 700;
+    font-size: 22px;
+    cursor: default;
+    margin: 0px;
+  }
+  
+  .margintop {
+    margin-top: 35px;
+  }
+  
+  form {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    max-width: 400px;
+  }
+  
+  form .i-container {
+    height: 100%;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+  
+  .input-text {
+    flex: 1;
+    position: relative;
+    height: 100%;
+  }
+  
+  #localisation {
+    position: absolute;
+    inset: 0;
+    border: 1px solid #f2f2f2;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  
+  .rechercher-desktop,
+  .rechercher-mobile {
+    height: 100%;
+    background: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .rechercher-mobile {
+    display: none;
+  }
+  
+  em,
+  main a,
+  aside a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+  }
+  
+  .filtres {
+    display: flex;
+    gap: 15px;
+    cursor: default;
+    align-items: center;
+  }
+  
+  .filtres-wrapper {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .filtres-card {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 0px 15px;
+  }
+  
+  .filtres i {
+    color: #0065fc;
+  }
+  
+  .filtres-card:hover {
+    background: #deebff;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    gap: 10px;
+  }
+  
+  .info i {
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    color: #0065fc;
+    padding: 12px 10px;
+  }
+  
+  main {
+    display: flex;
+    gap: 35px;
+  }
+  
+  .offresMain {
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 35px;
+    width: 100%;
+  }
+  
+  .container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 35px;
+    margin-bottom: 35px;
+  }
+  
+  article {
+    flex-basis: calc(32% - 20px);
+  }
+  
+  .card-main {
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+  }
+  
+  .offresMain img {
+    border: 5px solid #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    object-position: center;
+    object-fit: cover;
+    height: 120px;
+  }
+  
+  .info-card-main {
+    margin: 4px 15px 15px 15px;
+  }
+  
+  .gras16px {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 8px;
+    margin: 0px;
+  }
+  
+  /* Styles pour le prix des hôtels */
+  .price-hotel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 8px;
+    margin: 0px;
+  }
+  
+  .star-full {
+    color: #0065fc;
+  }
+  
+  .star-empty {
+    color: #f2f2f2;
+  }
+  
+  aside {
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 35px;
+  }
+  
+  .top-aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  
+  aside i {
+    color: #0065fc;
+  }
+  
+  .container-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  
+  .card-aside {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 146px;
+    width: 100%;
+    display: flex;
+  }
+  
+  aside img {
+    border: 5px solid #ffffff;
+    border-radius: 20px 0px 0px 20px;
+    width: 35%;
+    object-position: center;
+    object-fit: cover;
+  }
+  
+  .info-card-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 0px 5px 10px;
+  }
+  
+  .activites {
+    padding: 30px;
+  }
+  
+  .container-activite {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-activite {
+    width: 23%;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .card-activite img {
+    border-radius: 20px 20px 0px 0px;
+    object-position: center;
+    object-fit: cover;
+    height: 390px;
+  }
+  
+  .card-activite p {
+    padding: 0px;
+    margin: 20px 19px;
+  }
+  
+  footer {
+    background: #f2f2f2;
+    padding: 20px;
+    padding-right: 20vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .a-propos,
+  .nos-hebergements,
+  .assistance {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  footer a {
+    cursor: pointer;
+  }
+  
