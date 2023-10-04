@@ -1,0 +1,83 @@
+@media screen and (max-width: 767px) {
+  body {
+    margin: auto 20px;
+  }
+
+  header {
+    margin: 20px 0px 50px 0px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav1-hover, nav2-hover {
+    width: 112px;
+  }
+
+  .nav-hover {
+    order: 2;
+    width: 50vw;
+    background: #f2f2f2;
+  }
+
+  .nav {
+    margin: 0px 0px 20px 0px;
+  }
+
+  nav {
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .rechercher-mobile {
+    display: inline;
+    background: center / 15px 15px no-repeat url(../images/icons/Vector.png)
+      #0065fc;
+    width: 50px;
+  }
+
+  .rechercher-desktop {
+    display: none;
+  }
+
+  .filtres {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filtres-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .filtres-card {
+    height: 50px;
+  }
+  
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 92%;
+  }
+
+  aside {
+    order: -1;
+  }
+
+  .card-aside-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container-main {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 20px;
+    background-color: white;
+  }
+  main a {
+    display: none;
+  }
+}
