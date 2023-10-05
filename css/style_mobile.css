@@ -1,15 +1,23 @@
 @media screen and (max-width: 767px) {
   body {
-    margin: auto 20px;
+    max-width: 375px;
+    margin: 0px 20px;
+  }
+
+  @media screen and (min-width: 376px) {
+    body {
+      margin: 0px auto;
+    }
   }
 
   header {
-    margin: 20px 0px 50px 0px;
+    margin: 0px 0px 50px 0px;
     flex-direction: column;
     gap: 30px;
   }
 
-  .nav1-hover, nav2-hover {
+  .nav1-hover,
+  .nav2-hover {
     width: 112px;
   }
 
@@ -49,15 +57,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  
+
   .filtres-card {
     height: 50px;
+    min-width: 140px;
   }
-  
+
   .main {
     flex-direction: column;
     align-items: flex-start;
-    width: 92%;
   }
 
   aside {
@@ -69,15 +77,37 @@
     gap: 10px;
   }
 
-  .container-main {
-    flex-direction: column;
+  .offresMain {
+    background-color: white;
+    padding: 0px;
   }
 
-  main {
-    padding: 20px;
-    background-color: white;
+  .container-main {
+    flex-direction: column;
+    padding: 0px;
   }
+
   main a {
     display: none;
+  }
+
+  .container-activite {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card-activite {
+    height: 200px;
+    width: 100%;
+  }
+
+  .card-activite img {
+    height: 141px;
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 50px;
   }
 }
