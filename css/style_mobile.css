@@ -121,5 +121,6 @@
   footer {
     flex-direction: column;
     gap: 50px;
+    margin: auto -20px;
   }
 }
