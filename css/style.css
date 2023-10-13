@@ -72,7 +72,7 @@ footer a {
 }
 
 h1,
-h4 {
+h5 {
   font-weight: 700;
   font-size: 22px;
   cursor: default;
@@ -132,7 +132,7 @@ form .i-container {
   display: none;
 }
 
-em,
+h3,
 .hebergement a,
 aside a {
   font-style: normal;
