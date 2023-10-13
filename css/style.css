@@ -141,6 +141,7 @@ aside a {
   text-decoration: none;
   color: black;
   cursor: default;
+  margin: 0px;
 }
 
 .filtres {
@@ -355,9 +356,7 @@ footer {
   justify-content: space-between;
 }
 
-.a-propos,
-.nos-hebergements,
-.assistance {
+.footer-section {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -365,4 +364,6 @@ footer {
 
 footer a {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
