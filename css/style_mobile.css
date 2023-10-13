@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
   body {
     max-width: 375px;
-    margin: 0px 5px;
+    margin: 0px 20px;
   }
 
   @media screen and (min-width: 376px) {
@@ -60,7 +60,8 @@
 
   .filtres-card {
     height: 50px;
-    min-width: 140px;
+    min-width: 120px;
+
   }
 
   .hebergement {
@@ -70,11 +71,14 @@
 
   aside {
     order: -1;
+    border-radius: 0;
+    margin: auto -20px;
+    padding: 20px;
   }
 
-  .card-aside-container {
+  .container-aside {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   .offresMain {
@@ -85,11 +89,19 @@
   .container-main {
     flex-direction: column;
     padding: 0px;
+    margin: 15px auto;
+    gap: 15px;
+  }
+
+  .activites {
+    padding: 0px;
+    margin: 85px 0px 60px 0px;
   }
 
   .container-activite {
     flex-direction: column;
     gap: 15px;
+    margin-top: 30px;
   }
 
   .card-activite {
