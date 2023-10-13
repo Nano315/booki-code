@@ -115,8 +115,7 @@ form .i-container {
   padding-left: 10px;
 }
 
-.rechercher-desktop,
-.rechercher-mobile {
+button {
   height: 100%;
   background: #0065fc;
   border: 1px solid #0065fc;
@@ -128,9 +127,9 @@ form .i-container {
   cursor: pointer;
 }
 
-.rechercher-mobile {
-  display: none;
-}
+button i.fa-solid.fa-magnifying-glass {
+    display: none;
+}  
 
 h3,
 .hebergement a,

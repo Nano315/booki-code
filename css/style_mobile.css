@@ -36,14 +36,18 @@
     gap: 0px;
   }
 
-  .rechercher-mobile {
-    display: inline;
-    background: center / 15px 15px no-repeat url(../images/icons/Vector.png)
-      #0065fc;
+  button {
     width: 50px;
+    border-radius: 15px;
+    margin-left: -10px;
+    z-index: 1;
   }
 
-  .rechercher-desktop {
+  button i.fa-solid.fa-magnifying-glass {
+    display: inline;
+} 
+
+  button span {
     display: none;
   }
 
